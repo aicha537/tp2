@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function validateForm() {
+            var matricule = document.forms["apprenantForm"]["matricule"].value;
+            var nom = document.forms["apprenantForm"]["nom"].value;
+            var prenom = document.forms["apprenantForm"]["prenom"].value;
+            // Ajoutez ici la validation des autres champs
+
+            if (matricule == "") {
+                alert("Veuillez entrer le matricule de l'apprenant");
+                return false;
+            }
+            if (nom == "") {
+                alert("Veuillez entrer le nom de l'apprenant");
+                return false;
+            }
+            if (prenom == "") {
+                alert("Veuillez entrer le prénom de l'apprenant");
+                return false;
+            }
+            // Ajoutez ici les validations des autres champs
+
+            // Si toutes les validations sont réussies, vous pouvez soumettre le formulaire
+            alert("Formulaire soumis avec succès !");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.png" alt="Icon"> <br><br><br><br>
+
+            <h2 class="title">Inscription des apprenants de ODK</h2>
+        </div>
+        <form name="apprenantForm" action="traitement.php" onsubmit="return validateForm()" method="post">
+            <div class="photo-frame">
+                <input type="file" id="photo" name="photo"><br><br>
+            </div>
+            <label for="matricule">Matricule:</label>
+            <input type="text" id="matricule" name="matricule" required><br><br>
+
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required><br><br>
+            <label for="date_nais">Date de naissance:</label>
+            <input type="text" id="date_nais" name="date_nais" required><br><br>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="tel" name="tel" required><br><br>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="tel" name="tel" required><br><br>
+            <label for="mail">Email:</label>
+            <input type="mail" id="mail" name="mail" required><br><br>
+            <label for="annee_certification">Année de certification:</label>
+            <input type="text" id="annee_certification" name="annee_certification">
+
+            <label for="promotion">Promotion:</label>
+            <input type="text" id="promotion" name="promotion">
+            
+            <div class="buttons">
+                <input type="submit" value="Enregistrer">
+                <input type="button" value="Annuler">
+            </div>
+           
+        </form>
+    </div>
+
+    
+</body>
+</html>

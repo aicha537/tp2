@@ -6,31 +6,61 @@
     <title>portail apprenant</title>
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        body{
+            margin: 0;
+        }
+        .submenu{
+            display: none;
+        }
+        .recher-icon{
+            font-size: 30px;
+        }
+        .apprenant-icon img{
+            width: 30px;
+            height: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+            opacity: 0.5;
+        }
+        a:hover{
+            opacity: 1;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="background-image">
+  <div class="background1">
         <div class="menu-bar">
             <ul class="menu">
-                <li class="menu-item">Promotion
+                <li class="menu-item">
+                    <a href="#">Promotion</a>
                     <ul class="submenu">
-                        <li class="submenu-item">ODK1</li>
-                        <li class="submenu-item">ODK2</li>
-                        <li class="submenu-item">ODK3</li>
+                        <li class="submenu-item"><a href="">ODK1</a></li>
+                        <li class="submenu-item"><a href="#">ODK2</a></li>
+                        <li class="submenu-item"><a href="">ODK3</a></li>
                     </ul>
                 </li>
             </ul>
             <div class="recher-icon">
-                <img src="recher-icon.png" alt="recher-icon">
+                <span>&#128269;</span>
             </div>
             <div class="apprenant-icon">
-                <img src="apprenant-icon.png" alt="Apprenant Icon">
-                <footer>
-                    <img src="footer-image.png" alt="Footer Image">
-                </footer>
+                <a href=""><img src="image/user.png" alt="Apprenant Icon"> </a>
+                              
             </div>
         </div>
-    </div>
+    </div> 
+    <footer>
+        <img src="image/imgfoot.jfif" alt="Footer Image">
+    </footer>
 </body>
 </html>
 

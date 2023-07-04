@@ -6,6 +6,18 @@
     <title>Formulaire</title>
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .photo-frame span{
+            position: absolute;
+            top: 55px;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+    </style>
     <script>
         function validateForm() {
             var matricule = document.forms["apprenantForm"]["matricule"].value;
@@ -36,13 +48,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="icon.png" alt="Icon"> <br><br><br><br>
+            <img src="image/odk_icon.png" alt="Icon">
 
             <h2 class="title">Inscription des apprenants de ODK</h2>
         </div>
         <form name="apprenantForm" action="traitement.php" onsubmit="return validateForm()" method="post">
             <div class="photo-frame">
                 <input type="file" id="photo" name="photo"><br><br>
+                <span>Choisir une image</span>
             </div>
             <label for="matricule">Matricule:</label>
             <input type="text" id="matricule" name="matricule" required><br><br>

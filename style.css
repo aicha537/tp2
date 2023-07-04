@@ -1,5 +1,5 @@
 .container {
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
     background-color: #000;
     color: #fff;
@@ -8,14 +8,14 @@
 }
 
 .header {
-    display: flex;
+ display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .header img {
-    width: 40px;
-    margin-right: 10px;
+
+
 }
 
 .title {
@@ -25,12 +25,15 @@
 }
 
 .photo-frame {
+    position: relative;
     width: 150px;
     height: 150px;
+    margin: auto;
     margin-bottom: 20px;
     border: 2px solid #fff;
     border-radius: 8px;
     overflow: hidden;
+    text-align: center;
 }
 
 .photo-frame input[type="file"] {
@@ -47,7 +50,8 @@ label {
 
 input[type="text"],
 input[type="date"],
-input[type="tel"] {
+input[type="tel"],
+input[type="mail"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -75,8 +79,8 @@ input[type="button"]:hover {
     background-color: #ff6600;
 }
 /*style accueil*/
-.background-image {
-    background-image: url("background-image.jpg");
+.background1 {
+    background-image: url("image/background1.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -84,17 +88,21 @@ input[type="button"]:hover {
 
 .menu-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+.recher-icon {
+    font-size: 2px; /* Taille de l'icône */
+    color: #555; /* Couleur de l'icône */
+    cursor: pointer; /* Curseur de la souris au survol */
 }
 /*style accueilapprenant*/
 background-image {
@@ -151,7 +159,7 @@ background-image {
     color: orange;
 }
 
-.form-container {
+.form-container3 {
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
@@ -204,12 +212,16 @@ header {
 }
 
 .logo {
-    width: 100px;
     height: 100px;
 }
 
+td img{
+        width: 50PX;
+        HEIGHT: 50px;
+        border-radius: 50%;
+}
 .container2 {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -264,5 +276,4 @@ tbody td:last-child {
     width: 100px;
     height: 100px;
 }
-
 

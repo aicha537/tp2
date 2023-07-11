@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page d'accueil</title>
+  <style>
+    body {
+      background-image: url('image/back.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      background-repeat: no-repeat;
+      background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: orange;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border-radius: 5px;
+      background-color: transparent;
+      border: 2px solid white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      
+    }
+
+    .menu a:hover {
+      background-color: white;
+      color: orange;
+    }
+
+    .content {
+      padding: 20px;
+      color: white;
+      text-align: center;
+      background-color: rgba(0,0,0,0.5);
+      height: 100vh;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 2rem black;
+    }
+
+    h1 {
+      margin: 10% auto 0 auto;
+      color: white;
+      font-size: 36px;
+      text-align: center;
+     
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="image/orange.png" alt="Logo" class="logo">
+    <div class="menu">
+      <a href="#">Promotion</a>
+      <a href="#">Apprenant</a>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Bienvenue sur Kalanso Digital</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae commodo ex. Sed vestibulum lacinia ante, at feugiat odio lacinia sit amet. Suspendisse ac eleifend nisl, vel iaculis nisi. Nulla facilisi. Aliquam non ultrices nunc. Curabitur in augue vel neque iaculis volutpat in at mi.</p>
+  </div>
+</body>
+</html>

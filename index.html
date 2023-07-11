@@ -1,66 +1,105 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>portail apprenant</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Connexion Administrateur</title>
+  <style>
+    body {
+        background-image: url("image/back.webp");
+      font-family: Arial, sans-serif;
+      background-size: cover;
+    background-position: center;
+    
+    }
 
-    <style>
-        body{
-            margin: 0;
-        }
-        .submenu{
-            display: none;
-        }
-        .recher-icon{
-            font-size: 30px;
-        }
-        .apprenant-icon img{
-            width: 30px;
-            height: 30px;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 30px;
-            opacity: 0.5;
-        }
-        a:hover{
-            opacity: 1;
-        }
-        footer{
-            text-align: center;
-        }
-    </style>
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      
+    }
+
+    .left-section {
+      flex: 1;
+      background-color: orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 20px;
+      color: #333333;
+    }
+
+    h1 {
+      text-align: center;
+      color: orange;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
 </head>
-
 <body>
-  <div class="background1">
-        <div class="menu-bar">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#">Promotion</a>
-                    <ul class="submenu">
-                        <li class="submenu-item"><a href="">ODK1</a></li>
-                        <li class="submenu-item"><a href="#">ODK2</a></li>
-                        <li class="submenu-item"><a href="">ODK3</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="recher-icon">
-                <span>&#128269;</span>
-            </div>
-            <div class="apprenant-icon">
-                <a href=""><img src="image/user.png" alt="Apprenant Icon"> </a>
-                              
-            </div>
+  <div class="container">
+    <div class="left-section">
+      <img src="image/cp.png" alt="Logo" width="300">
+    </div>
+    <div class="right-section">
+      <h1>Connexion Administrateur</h1>
+      <form action="process-login.php" method="POST">
+        <div class="form-group">
+          <label for="username">Nom d'utilisateur :</label>
+          <input type="text" id="username" name="username" required>
         </div>
-    </div> 
-    <footer>
-        <img src="image/imgfoot.jfif" alt="Footer Image">
-    </footer>
+        <div class="form-group">
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Se connecter</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
-
